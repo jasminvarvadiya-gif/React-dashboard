@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+.siderbar{
+    width: 250px;
+    height: 100%;
+    border-right: 1px solid black;
+}
+.logo-img img{
+    width: 30px;
+}
+.logo-text img{
+    width: 80px;
+}
+.nav-list a:hover {
+    color: orange;
+    background-color: rgba(255, 166, 0, 0.098);
+    border-radius: 10px;
+}
+.nav-bar{
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 9px;
+    align-items: center;
+    height: auto;
+}
+.itme img{
+    width: 45px; 
+    border-radius: 50%;  
+}
+.text-ixon{
+    display: flex;
+    justify-content: space-between;   
+}
