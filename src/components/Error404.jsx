@@ -7,8 +7,8 @@ const Error404 = () => {
     <div className="container">
         <div className="contan">
             <div className="img flex w-100 m-auto pt-9 ps-25 items-center gap-2">
-                <img src="./imgs/img.png.png" alt="" className=' w-15' />
-                <img src="./imgs/text (1).png" alt="" className=' w-25 y-25' />
+                <img src="/imgs/img.png.png" alt="" className=' w-15' />
+                <img src="/imgs/text (1).png" alt="" className=' w-25 y-25' />
             </div>
             <div className="txt text-center py-25">
                 <h1 className='text-orange-500 text-8xl font-bold'>404</h1>

@@ -35,8 +35,8 @@ const Department = () => {
         <div className="conten">
           <div className="sigup border max-w-md m-auto rounded-xl py-5 shadow-lg">
             <div className="img flex justify-center items-center py-4 gap-3">
-              <img src="./imgs/img.png.png" alt="" className="w-[10%]" />
-              <img src="./imgs/text (1).png" alt="" className="w-[15%]" />
+              <img src="/imgs/img.png.png" alt="" className="w-[10%]" />
+              <img src="/imgs/text (1).png" alt="" className="w-[15%]" />
             </div>
             <div className="txt text-center">
               <h1 className="text-2xl font-semibold">Create your account</h1>

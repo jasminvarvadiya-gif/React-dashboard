@@ -60,7 +60,7 @@ const Reportspage = () => {
               </div>
               <div className="chart py-5">
                 <div className="img">
-                  <img src="./imgs/chart.png" alt="" />
+                  <img src="/imgs/chart.png" alt="" />
                 </div>
               </div>
             </div>
@@ -78,7 +78,7 @@ const Reportspage = () => {
                 <div className="img-main w-[50%] flex items-center gap-4">
                   <div className="img w-[15%]">
                     <img
-                      src="./imgs/product-1.png"
+                      src="/imgs/product-1.png"
                       alt=""
                       className=" rounded-xl"
                     />
@@ -99,7 +99,7 @@ const Reportspage = () => {
                 <div className="img-main w-[50%] flex items-center gap-4">
                   <div className="img w-[15%]">
                     <img
-                      src="./imgs/product-2.png"
+                      src="/imgs/product-2.png"
                       alt=""
                       className=" rounded-xl"
                     />
@@ -120,7 +120,7 @@ const Reportspage = () => {
                 <div className="img-main w-[50%] flex items-center gap-4">
                   <div className="img w-[15%]">
                     <img
-                      src="./imgs/product-3.png"
+                      src="/imgs/product-3.png"
                       alt=""
                       className=" rounded-xl"
                     />

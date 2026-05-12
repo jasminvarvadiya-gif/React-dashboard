@@ -22,7 +22,7 @@ const Upernav = ({ s1 }) => {
               <div className="itme  flex items-center gap-3">
                 <i className="fa-regular fa-bell text-xl"></i>
                 <img
-                  src="./imgs/face.png"
+                  src="/imgs/face.png"
                   alt=""
                   className="w-25 relative cursor-pointer"
                   id="face"
@@ -36,7 +36,7 @@ const Upernav = ({ s1 }) => {
                   <div className="img-text flex  items-center gap-5 border-b pb-5">
                     <div className="img">
                       <img
-                        src="./imgs/face.png"
+                        src="/imgs/face.png"
                         alt=""
                         onClick={() => setshow(!show)}
                         className="w-20"

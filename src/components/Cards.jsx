@@ -200,7 +200,7 @@ const Cards = () => {
                   <h1>Customers Overview</h1>
                   <div className="img-text flex my-4  items-center w-full justify-between">
                     <div className="img " style={{ width: "50%" }}>
-                      <img src="./imgs/Data-2.png" alt="" />
+                      <img src="/imgs/Data-2.png" alt="" />
                     </div>
                     <div
                       className="text w-50 flex items-center gap-5"
