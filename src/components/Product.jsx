@@ -8,7 +8,7 @@ export const Data = [
     "price": 99.99,
     "unit": "pcs",
     "quantity": 150,
-    "image": "./public/imgs/product-1.png",
+    "image": "/imgs/product-1.png",
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@ export const Data = [
     "price": 89.99,
     "unit": "pcs",
     "quantity": 320,
-    "image":"./public/imgs/product-2.png",
+    "image":"/imgs/product-2.png",
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@ export const Data = [
     "price": 98.00,
     "unit": "pcs",
     "quantity": 200,
-    "image": "./public/imgs/product-3.png",
+    "image": "/imgs/product-3.png",
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@ export const Data = [
     "price": 86.00,
     "unit": "pcs",
     "quantity": 80,
-    "image": "./public/imgs/product-4.png",
+    "image": "/imgs/product-4.png",
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@ export const Data = [
     "price": 32.00,
     "unit": "pcs",
     "quantity": 110,
-    "image": "./public/imgs/product-5.png",
+    "image": "/imgs/product-5.png",
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@ export const Data = [
     "price": 49.00,
     "unit": "pcs",
     "quantity": 10,
-    "image":"./public/imgs/product-6.png",
+    "image":"/imgs/product-6.png",
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@ export const Data = [
     "price": 99.00,
     "unit": "pcs",
     "quantity": 10,
-    "image":"./public/imgs/product-7.png",
+    "image":"/imgs/product-7.png",
   },
   {
     "id": 8,
@@ -85,6 +85,6 @@ export const Data = [
     "price": 109.00,
     "unit": "pcs",
     "quantity": 200,
-    "image": "./public/imgs/product-8.png",
+    "image": "/imgs/product-8.png",
   }
 ]
