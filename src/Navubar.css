@@ -2,16 +2,36 @@
     box-sizing: border-box;
 }
 .siderbar{
-    width: 250px;
+    width: 240px;
     height: 100%;
     border-right: 1px solid black;
 }
+
+@media (max-width: 768px) {
+    .siderbar {
+        width: 200px;
+    }
+}
+
+@media (max-width: 640px) {
+    .siderbar {
+        width: 180px;
+    }
+}
+
 .logo-img img{
     width: 30px;
 }
 .logo-text img{
     width: 80px;
 }
+
+@media (max-width: 640px) {
+    .logo-text img {
+        width: 60px;
+    }
+}
+
 .nav-list a:hover {
     color: orange;
     background-color: rgba(255, 166, 0, 0.098);
@@ -28,7 +48,14 @@
     width: 45px; 
     border-radius: 50%;  
 }
+
+@media (max-width: 640px) {
+    .itme img {
+        width: 35px;
+    }
+}
+
 .text-ixon{
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
 }

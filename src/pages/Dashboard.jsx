@@ -11,8 +11,8 @@ const Dashboard = ({ state }) => {
         <div
           className={
             state.side
-              ? "absolute left-10 top-0 w-300 " 
-              : "absolute left-70 top-0 w-[75vw] ms-auto me-auto"
+              ? "relative w-full md:absolute md:left-10 md:top-0 md:w-300 transition-all duration-300 px-4 md:px-0" 
+              : "relative w-full md:absolute md:left-64 md:top-0 md:w-[calc(100%-260px)] transition-all duration-300 px-4 md:px-0 md:ms-auto md:me-auto"
           }
         >
           <Upernav s1={state} />
