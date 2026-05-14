@@ -14,10 +14,7 @@ const Navubar = ({s}) => {
             : "deshboard flex w-full fixed min-h-screen"
         }
       >
-        <aside
-          className="siderbar bg-gray-800 text-white h-screen p-5 transition-all duration-300 
-     "
-        >
+        <aside  className="siderbar bg-gray-800 text-white h-screen p-5 transition-all duration-300 ">
           <div className="container border-b h-auto w-full  ">
             <div className="logo flex w-full h-auto gap-2 content-center items-center py-5 ps-5 ">
               <div className="logo-img ">

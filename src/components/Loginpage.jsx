@@ -52,7 +52,7 @@ const Loginpage = () => {
             <div className="btn py-5 px-5">
                     <button 
                     onClick={handledata}
-                    className=" bg-orange-500 text-white w-full text-center py-2 rounded-xl text-xl" >Sign ing</button>
+                    className=" bg-orange-500 text-white w-full text-center py-2 rounded-xl text-xl" >Sign in</button>
                 </div></Link>
             </div>
             <div className="btn">
