@@ -10,104 +10,148 @@ const Department = () => {
 
   const handleSignup = (e) => {
     e.preventDefault();
+
     if (!fullname || !email || !password || !confirmpass) {
       alert("Please fill all fields");
       return;
     }
+
     if (password.length < 6) {
       alert("Password must be at least 6 characters");
       return;
     }
+
     if (password !== confirmpass) {
       alert("Passwords do not match");
       return;
     }
+
     if (!check) {
-      alert("Please accept Terms and Conditions");
+      alert("Accept Terms & Conditions");
       return;
     }
+
     alert("Signup Successfully");
   };
 
   return (
     <>
-      <div className="container py-10">
-        <div className="conten">
-          <div className="sigup border max-w-md m-auto rounded-xl py-5 shadow-lg">
-            <div className="img flex justify-center items-center py-4 gap-3">
-              <img src="/imgs/img.png.png" alt="" className="w-[10%]" />
-              <img src="/imgs/text (1).png" alt="" className="w-[15%]" />
+      <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4 py-10">
+
+        {/* Back Button */}
+        <div className="absolute top-5 left-4 md:left-10">
+          <Link to="/">
+            <button className="bg-orange-500 text-white px-3 py-2 rounded flex gap-2 items-center text-sm md:text-base">
+              <i className="fa-solid fa-angle-left"></i>
+              Dashboard
+            </button>
+          </Link>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-xl w-full max-w-md md:max-w-lg py-6 px-5">
+
+          {/* Logo */}
+          <div className="flex justify-center items-center gap-2 mb-5">
+            <img
+              src="/imgs/img.png.png"
+              alt=""
+              className="w-10 md:w-12"
+            />
+
+            <img
+              src="/imgs/text (1).png"
+              alt=""
+              className="w-20 md:w-24"
+            />
+          </div>
+
+          <h1 className="text-center text-2xl md:text-3xl font-bold mb-6">
+            Create Your Account
+          </h1>
+
+          <form
+            onSubmit={handleSignup}
+            className="flex flex-col gap-4"
+          >
+
+            <div>
+              <label>Full Name</label>
+
+              <input
+                type="text"
+                placeholder="Enter name"
+                value={fullname}
+                onChange={(e) => setfullname(e.target.value)}
+                className="border w-full p-3 rounded mt-1"
+              />
             </div>
-            <div className="txt text-center">
-              <h1 className="text-2xl font-semibold">Create your account</h1>
+
+            <div>
+              <label>Email</label>
+
+              <input
+                type="email"
+                placeholder="Enter email"
+                value={email}
+                onChange={(e) => setemail(e.target.value)}
+                className="border w-full p-3 rounded mt-1"
+              />
             </div>
-            <div className="form">
-              <form
-               
-                className="flex flex-col gap-4 w-[80%] m-auto py-5"
+
+            <div>
+              <label>Password</label>
+
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setpassword(e.target.value)}
+                className="border w-full p-3 rounded mt-1"
+              />
+            </div>
+
+            <div>
+              <label>Confirm Password</label>
+
+              <input
+                type="password"
+                placeholder="Confirm password"
+                value={confirmpass}
+                onChange={(e) => setconfirmpass(e.target.value)}
+                className="border w-full p-3 rounded mt-1"
+              />
+            </div>
+
+            <div className="flex gap-2 items-start">
+              <input
+                type="checkbox"
+                checked={check}
+                onChange={(e) => setcheck(e.target.checked)}
+              />
+
+              <p className="text-sm">
+                I agree to Terms & Conditions
+              </p>
+            </div>
+
+            <button
+              type="submit"
+              className="bg-orange-500 text-white py-3 rounded hover:bg-orange-600 transition"
+            >
+              Sign Up
+            </button>
+
+            <p className="text-center text-sm">
+              Already have account?
+              <Link
+                to="/login"
+                className="text-orange-500 ml-1"
               >
-                <label>Full Name</label>
-                <input
-                  type="text"
-                  placeholder="First Name"
-                  className="border p-2 rounded"
-                  value={fullname}
-                  onChange={(e) => setfullname(e.target.value)}
-                />
-                <label>Email address</label>
-                <input
-                  type="email"
-                  placeholder="Confirm Email"
-                  className="border p-2 rounded"
-                  value={email}
-                  onChange={(e) => setemail(e.target.value)}
-                />
-                <label>Password</label>
-                <input
-                  type="password"
-                  placeholder="Create password"
-                  className="border p-2 rounded"
-                  value={password}
-                  onChange={(e) => setpassword(e.target.value)}
-                />
-                <label>Confirm password</label>
-                <input
-                  type="password"
-                  placeholder="Confirm password"
-                  className="border p-2 rounded"
-                  value={confirmpass}
-                  onChange={(e) => setconfirmpass(e.target.value)}
-                />
-                <div className="check-box flex gap-2 items-center">
-                  <input
-                    type="checkbox"
-                    id="box"
-                    checked={check}
-                    onChange={(e) => setcheck(e.target.checked)}
-                  />
-                  <label htmlFor="box">
-                    I agree to the Terms and Conditions
-                  </label>
-                </div>
-                <Link to={"/"}>
-                  <button
-                    type="submit"
-                    onClick={handleSignup}
-                    className="bg-orange-500 text-white py-3 rounded px-4 w-full" >
-                    Sign Up
-                  </button>
-                </Link>
-              </form>
-            </div>
-          </div>
-          <div className="deshbord absolute top-5 left-5">
-            <Link to="/">
-              <button className="bg-orange-500 text-white px-2 py-1 rounded">
-                <i className="fa-solid fa-angle-left text-xl "></i>
-                Go to Dashboard
-              </button>
-            </Link>
-          </div>
+                Login
+              </Link>
+            </p>
+
+          </form>
         </div>
       </div>
     </>

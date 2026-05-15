@@ -14,7 +14,7 @@ const Upernav = ({ s1 }) => {
               <div className="logo">
                 <button
                   onClick={() => setSide(!side)}
-                  className=" cursor-pointer text-xl md:text-2xl"
+        className=" fixed top-4 left-4 z-50   px-3 py-2"
                 >
                   <i className="fa-solid fa-bars"></i>
                 </button>

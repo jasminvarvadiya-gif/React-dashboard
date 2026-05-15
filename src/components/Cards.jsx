@@ -15,7 +15,7 @@ const Cards = () => {
           <div className="card">
             <div className="card-all w-full flex flex-col sm:flex-col lg:flex-row gap-2 md:gap-3 px-2 md:px-0">
               <div
-                className="card-1 py-4 md:py-5 px-4 md:px-5 bg-orange-200 bg-opacity-10 flex gap-3 md:gap-4 w-full sm:w-full lg:w-1/4"
+                className="card-1 py-4 md:py-5 px-4  md:px-5 bg-orange-200 bg-opacity-10 flex gap-3 md:gap-4 w-full sm:w-full lg:w-1/4"
                 style={{ borderRadius: "10px" }}
               >
                 <div className="card-icon flex-shrink-0">

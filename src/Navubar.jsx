@@ -11,10 +11,10 @@ const Navubar = ({s}) => {
         className={
           s.side
             ? "deshboard flex w-full fixed min-h-screen -left-60 md:-left-64"
-            : "deshboard flex w-full fixed min-h-screen left-0"
+            : "deshboard flex w-full fixed min-h-screen left-0 z-20"
         }
       >
-        <aside  className="siderbar bg-gray-800 text-white h-screen p-3 md:p-5 transition-all duration-300 overflow-y-auto">
+        <aside  className="siderbar bg-gray-800 text-white h-screen p-3 md:p-5 transition-all duration-300 overflow-y-auto mb-19">
           <div className="container border-b h-auto w-full  ">
             <div className="logo flex w-full h-auto gap-2 content-center items-center py-3 md:py-5 ps-2 md:ps-5 ">
               <div className="logo-img ">

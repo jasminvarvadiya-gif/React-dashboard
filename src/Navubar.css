@@ -5,11 +5,14 @@
     width: 240px;
     height: 100%;
     border-right: 1px solid black;
+    overflow-y: auto;
+    overflow-wrap: break-word;
 }
 
 @media (max-width: 768px) {
     .siderbar {
         width: 200px;
+        
     }
 }
 
